@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" role="img" aria-label="X Phone Pro">
+  <defs>
+    <linearGradient id="proFrame" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e3a5f"/>
+      <stop offset="40%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="proScreen" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0c1929"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <linearGradient id="proAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60a5fa"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="300" cy="770" rx="190" ry="22" fill="#000" opacity="0.45"/>
+  <!-- Titanium frame -->
+  <rect x="170" y="35" width="260" height="710" rx="48" fill="url(#proFrame)" stroke="#3b82f6" stroke-width="2.5"/>
+  <!-- Side buttons -->
+  <rect x="162" y="175" width="7" height="55" rx="3" fill="#2563eb"/>
+  <rect x="162" y="248" width="7" height="85" rx="3" fill="#2563eb"/>
+  <rect x="431" y="215" width="7" height="105" rx="3" fill="#2563eb"/>
+  <!-- Screen -->
+  <rect x="190" y="75" width="220" height="630" rx="38" fill="#0a0a0a"/>
+  <rect x="200" y="105" width="200" height="570" rx="30" fill="url(#proScreen)"/>
+  <!-- Dynamic island -->
+  <rect x="250" y="118" width="100" height="30" rx="15" fill="#000"/>
+  <!-- Pro badge -->
+  <rect x="240" y="340" width="120" height="36" rx="18" fill="url(#proAccent)"/>
+  <text x="300" y="364" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="16" font-weight="bold" letter-spacing="2">PRO</text>
+  <text x="300" y="410" text-anchor="middle" fill="#60a5fa" font-family="system-ui,sans-serif" font-size="64" font-weight="bold">5O</text>
+  <!-- Triple camera array -->
+  <g transform="translate(420, 120)">
+    <circle cx="0" cy="0" r="28" fill="#111" stroke="#333" stroke-width="2"/>
+    <circle cx="0" cy="0" r="18" fill="#1a1a2e" stroke="#2563eb" stroke-width="1"/>
+    <circle cx="0" cy="55" r="22" fill="#111" stroke="#333" stroke-width="2"/>
+    <circle cx="0" cy="55" r="14" fill="#1a1a2e" stroke="#2563eb" stroke-width="1"/>
+    <circle cx="0" cy="100" r="22" fill="#111" stroke="#333" stroke-width="2"/>
+    <circle cx="0" cy="100" r="14" fill="#1a1a2e" stroke="#2563eb" stroke-width="1"/>
+    <rect x="-8" y="115" width="16" height="8" rx="2" fill="#333"/>
+  </g>
+  <!-- Status bar -->
+  <text x="215" y="138" fill="#60a5fa" font-family="system-ui,sans-serif" font-size="11">9:41</text>
+  <!-- Widget -->
+  <rect x="215" y="480" width="170" height="80" rx="16" fill="#1e3a5f" opacity="0.7"/>
+  <text x="300" y="515" text-anchor="middle" fill="#93c5fd" font-family="system-ui,sans-serif" font-size="12">Starlink Connected</text>
+  <text x="300" y="540" text-anchor="middle" fill="#60a5fa" font-family="system-ui,sans-serif" font-size="20" font-weight="bold">ооооп</text>
+  <rect x="265" cy="645" y="640" width="70" height="4" rx="2" fill="#3b82f6" opacity="0.7"/>
+</svg>
