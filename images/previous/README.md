@@ -1,7 +1,11 @@
-Previous phone product photos (pre v2 refresh). To restore:
+Previous phone product photos for rollback:
 
+- `images/previous/` — original v1 photos
+- `images/previous/v2/` — v2 white-studio photos
+- Current live photos: `images/v3/` (dark studio backgrounds)
+
+To restore v1:
 ```bash
-cp images/previous/x-phone*.webp images/
+cp images/previous/x-phone*.webp images/v3/
+# then rename mapping: pro-max=Max, ultra=Elite, ultra-max=Ultra
 ```
-
-Note: `x-phone-pro-max.webp` = X Phone Max, `x-phone-ultra.webp` = X Phone Elite, `x-phone-ultra-max.webp` = X Phone Ultra.
