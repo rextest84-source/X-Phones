@@ -8,25 +8,17 @@
 </head>
 <body class="bg-black text-white">
 
-  <nav class="fixed top-0 w-full bg-black/90 backdrop-blur border-b border-white/10 z-50">
-    <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
-      <h1 class="text-3xl font-bold text-blue-400">X Phones</h1>
-      <div class="flex gap-8 font-medium">
-        <a href="index.html">Home</a>
-        <a href="shop.html" class="text-blue-400">Shop</a>
-      </div>
-    </div>
-  </nav>
+  <div id="site-nav" data-active="shop"></div>
 
   <div class="pt-24 pb-16 max-w-7xl mx-auto px-6">
     <h1 class="text-5xl font-bold text-center mb-4">The X Phone Collection</h1>
-    <p class="text-center text-zinc-400 text-xl mb-16">From 256GB to 2TB — Built for the future.</p>
+    <p class="text-center text-zinc-400 text-xl mb-16">From 256GB to 2TB — Built for the future. <a href="vision.html" class="text-blue-400 hover:underline">Read the vision</a></p>
 
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
 
       <!-- Model 1 -->
       <div class="bg-zinc-900 rounded-3xl overflow-hidden">
-        <img src="images/x-phone.webp" width="800" height="600" loading="eager" fetchpriority="high" decoding="async" class="w-full h-64 object-cover" alt="X Phone">
+        <a href="x-phone.html"><img src="images/x-phone.webp" width="800" height="600" loading="eager" fetchpriority="high" decoding="async" class="w-full h-64 object-cover" alt="X Phone"></a>
         <div class="p-8">
           <h3 class="text-2xl font-bold">X Phone</h3>
           <p class="text-blue-400 text-3xl">$899</p>
@@ -37,7 +29,7 @@
 
       <!-- Model 2 -->
       <div class="bg-zinc-900 rounded-3xl overflow-hidden">
-        <img src="images/x-phone-plus.webp" width="800" height="600" loading="lazy" decoding="async" class="w-full h-64 object-cover" alt="X Phone Plus">
+        <a href="x-phone-plus.html"><img src="images/x-phone-plus.webp" width="800" height="600" loading="lazy" decoding="async" class="w-full h-64 object-cover" alt="X Phone Plus"></a>
         <div class="p-8">
           <h3 class="text-2xl font-bold">X Phone Plus</h3>
           <p class="text-blue-400 text-3xl">$1,099</p>
@@ -48,7 +40,7 @@
 
       <!-- Model 3 -->
       <div class="bg-zinc-900 rounded-3xl overflow-hidden border border-blue-500">
-        <img src="images/x-phone-pro.webp" width="800" height="600" loading="lazy" decoding="async" class="w-full h-64 object-cover" alt="X Phone Pro">
+        <a href="x-phone-pro.html"><img src="images/x-phone-pro.webp" width="800" height="600" loading="lazy" decoding="async" class="w-full h-64 object-cover" alt="X Phone Pro"></a>
         <div class="p-8">
           <h3 class="text-2xl font-bold">X Phone Pro</h3>
           <p class="text-blue-400 text-3xl">$1,299</p>
@@ -59,7 +51,7 @@
 
       <!-- Model 4 -->
       <div class="bg-zinc-900 rounded-3xl overflow-hidden">
-        <img src="images/x-phone-pro-max.webp" width="800" height="600" loading="lazy" decoding="async" class="w-full h-64 object-cover" alt="X Phone Max">
+        <a href="x-phone-max.html"><img src="images/x-phone-pro-max.webp" width="800" height="600" loading="lazy" decoding="async" class="w-full h-64 object-cover" alt="X Phone Max"></a>
         <div class="p-8">
           <h3 class="text-2xl font-bold">X Phone Max</h3>
           <p class="text-blue-400 text-3xl">$1,599</p>
@@ -70,7 +62,7 @@
 
       <!-- Model 5 -->
       <div class="bg-zinc-900 rounded-3xl overflow-hidden">
-        <img src="images/x-phone-ultra.webp" width="800" height="600" loading="lazy" decoding="async" class="w-full h-64 object-cover" alt="X Phone Elite">
+        <a href="x-phone-elite.html"><img src="images/x-phone-ultra.webp" width="800" height="600" loading="lazy" decoding="async" class="w-full h-64 object-cover" alt="X Phone Elite"></a>
         <div class="p-8">
           <h3 class="text-2xl font-bold">X Phone Elite</h3>
           <p class="text-blue-400 text-3xl">$1,899</p>
@@ -81,7 +73,7 @@
 
       <!-- Model 6 -->
       <div class="bg-zinc-900 rounded-3xl overflow-hidden">
-        <img src="images/x-phone-ultra-max.webp" width="800" height="600" loading="lazy" decoding="async" class="w-full h-64 object-cover" alt="X Phone Ultra">
+        <a href="x-phone-ultra.html"><img src="images/x-phone-ultra-max.webp" width="800" height="600" loading="lazy" decoding="async" class="w-full h-64 object-cover" alt="X Phone Ultra"></a>
         <div class="p-8">
           <h3 class="text-2xl font-bold">X Phone Ultra</h3>
           <p class="text-blue-400 text-3xl">$2,499</p>
@@ -92,5 +84,8 @@
 
     </div>
   </div>
+
+  <div id="site-footer"></div>
+  <script src="site.js"></script>
 </body>
 </html>

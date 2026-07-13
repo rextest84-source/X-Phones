@@ -7,12 +7,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-black text-white">
-  <nav class="fixed top-0 w-full bg-black/90 backdrop-blur border-b border-white/10 z-50">
-    <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
-      <a href="index.html" class="text-3xl font-bold text-blue-400">X Phones</a>
-      <a href="shop.html" class="hover:text-blue-400">← Shop</a>
-    </div>
-  </nav>
+  <div id="site-nav" data-active="product"></div>
 
   <div class="pt-24 max-w-7xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-16">
     <img src="images/x-phone-pro-max.webp" width="800" height="600" loading="eager" fetchpriority="high" decoding="async" class="rounded-3xl w-full object-cover" alt="X Phone Max">
@@ -21,7 +16,11 @@
       <p class="text-blue-400 text-4xl font-semibold mt-4">$1,599</p>
       <p class="text-zinc-400">1.5TB Storage</p>
       <button class="mt-12 w-full py-6 bg-blue-500 rounded-2xl text-xl font-bold">Add to Cart</button>
+      <p class="mt-8 text-zinc-400"><a href="shop.html" class="text-blue-400 hover:underline">← View all phones</a> · <a href="vision.html" class="text-blue-400 hover:underline">The Vision</a></p>
     </div>
   </div>
+
+  <div id="site-footer"></div>
+  <script src="site.js"></script>
 </body>
 </html>

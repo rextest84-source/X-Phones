@@ -8,12 +8,7 @@
 </head>
 <body class="bg-black text-white">
 
-  <nav class="fixed top-0 w-full bg-black/90 backdrop-blur border-b border-white/10 z-50">
-    <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
-      <a href="index.html" class="text-3xl font-bold text-blue-400">X Phones</a>
-      <a href="index.html" class="hover:text-blue-400">Home</a>
-    </div>
-  </nav>
+  <div id="site-nav" data-active="vision"></div>
 
   <div class="pt-24 max-w-4xl mx-auto px-6 py-20 text-center">
 
@@ -31,23 +26,31 @@
 
       <h2 class="text-4xl font-bold mt-16 mb-8">The Fleet</h2>
       <ul class="grid md:grid-cols-2 gap-6 text-left text-xl">
-        <li><strong>X Phone</strong> — 256GB • Entry to the future ($899)</li>
-        <li><strong>X Phone Plus</strong> — 512GB • Balanced power ($1,099)</li>
-        <li><strong>X Phone Pro</strong> — 1TB • Grok 5 intelligence ($1,299)</li>
-        <li><strong>X Phone Max</strong> — 1.5TB • Maximum performance ($1,599)</li>
-        <li><strong>X Phone Elite</strong> — 2TB • Ultimate flagship ($1,899)</li>
-        <li><strong>X Phone Ultra</strong> — 2TB Foldable • The pinnacle ($2,499)</li>
+        <li><a href="x-phone.html" class="hover:text-blue-400"><strong>X Phone</strong> — 256GB • Entry to the future ($899)</a></li>
+        <li><a href="x-phone-plus.html" class="hover:text-blue-400"><strong>X Phone Plus</strong> — 512GB • Balanced power ($1,099)</a></li>
+        <li><a href="x-phone-pro.html" class="hover:text-blue-400"><strong>X Phone Pro</strong> — 1TB • Grok 5 intelligence ($1,299)</a></li>
+        <li><a href="x-phone-max.html" class="hover:text-blue-400"><strong>X Phone Max</strong> — 1.5TB • Maximum performance ($1,599)</a></li>
+        <li><a href="x-phone-elite.html" class="hover:text-blue-400"><strong>X Phone Elite</strong> — 2TB • Ultimate flagship ($1,899)</a></li>
+        <li><a href="x-phone-ultra.html" class="hover:text-blue-400"><strong>X Phone Ultra</strong> — 2TB Foldable • The pinnacle ($2,499)</a></li>
       </ul>
 
-      <div class="my-16 border-l-4 border-blue-500 pl-8 italic text-2xl">
+      <div class="my-16 border-l-4 border-blue-500 pl-8 italic text-2xl text-left">
         “We must make life multi-planetary. The phone should help us get there.”
         <p class="text-blue-400 mt-6 text-lg">— Elon Musk</p>
       </div>
     </div>
 
-    <a href="shop.html" class="inline-block mt-16 px-16 py-6 bg-white text-black font-bold text-2xl rounded-2xl hover:bg-blue-400 transition">
-      Explore the Full Fleet
-    </a>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center mt-16">
+      <a href="shop.html" class="inline-block px-16 py-6 bg-white text-black font-bold text-2xl rounded-2xl hover:bg-blue-400 transition">
+        Explore the Full Fleet
+      </a>
+      <a href="index.html" class="inline-block px-16 py-6 border border-white/20 font-bold text-2xl rounded-2xl hover:border-blue-400 hover:text-blue-400 transition">
+        Back to Home
+      </a>
+    </div>
   </div>
+
+  <div id="site-footer"></div>
+  <script src="site.js"></script>
 </body>
 </html>
