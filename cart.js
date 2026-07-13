@@ -76,14 +76,18 @@
       }
 
       cartItemsEl.innerHTML = cart.map((item) => `
-        <div class="flex gap-6 items-center bg-zinc-900 rounded-2xl p-6">
-          <img src="${item.image}" width="120" height="90" class="w-24 h-24 object-cover rounded-xl" alt="${item.name}">
-          <div class="flex-1">
-            <h2 class="text-2xl font-bold">${item.name}</h2>
-            <p class="text-zinc-400">${item.storage} · Qty ${item.qty}</p>
+        <div class="bg-zinc-900 rounded-2xl p-4 sm:p-6 overflow-hidden">
+          <div class="flex gap-4 items-start">
+            <img src="${item.image}" width="96" height="96" class="w-20 h-20 sm:w-24 sm:h-24 shrink-0 object-cover rounded-xl" alt="${item.name}">
+            <div class="flex-1 min-w-0">
+              <h2 class="text-xl sm:text-2xl font-bold truncate">${item.name}</h2>
+              <p class="text-zinc-400 text-sm sm:text-base mt-1">${item.storage} · Qty ${item.qty}</p>
+            </div>
           </div>
-          <p class="text-xl font-semibold text-blue-400">${formatPrice(item.price * item.qty)}</p>
-          <button type="button" data-remove="${item.id}" class="text-zinc-500 hover:text-white text-sm">Remove</button>
+          <div class="flex items-center justify-between mt-4 pt-4 border-t border-white/10">
+            <p class="text-xl sm:text-2xl font-semibold text-blue-400">${formatPrice(item.price * item.qty)}</p>
+            <button type="button" data-remove="${item.id}" class="text-zinc-400 hover:text-white text-sm font-medium px-3 py-2 rounded-lg hover:bg-white/5">Remove</button>
+          </div>
         </div>
       `).join('');
 
