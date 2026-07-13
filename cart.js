@@ -2,12 +2,12 @@
   const CART_KEY = 'xphones-cart';
 
   const products = {
-    'x-phone': { id: 'x-phone', name: 'X Phone', price: 899, image: 'images/v4/x-phone.webp?b=3', storage: '256GB' },
-    'x-phone-plus': { id: 'x-phone-plus', name: 'X Phone Plus', price: 1099, image: 'images/v4/x-phone-plus.webp?b=5', storage: '512GB' },
-    'x-phone-pro': { id: 'x-phone-pro', name: 'X Phone Pro', price: 1299, image: 'images/v4/x-phone-pro.webp', storage: '1TB' },
-    'x-phone-max': { id: 'x-phone-max', name: 'X Phone Max', price: 1599, image: 'images/v4/x-phone-pro-max.webp', storage: '1.5TB' },
-    'x-phone-elite': { id: 'x-phone-elite', name: 'X Phone Elite', price: 1899, image: 'images/v4/x-phone-ultra.webp', storage: '2TB' },
-    'x-phone-ultra': { id: 'x-phone-ultra', name: 'X Phone Ultra', price: 2499, image: 'images/v4/x-phone-ultra-max.webp', storage: '2TB + Foldable' },
+    'x-phone': { id: 'x-phone', name: 'X Phone', price: 780, image: 'images/v4/x-phone.webp?b=3', storage: '256GB' },
+    'x-phone-plus': { id: 'x-phone-plus', name: 'X Phone Plus', price: 1029, image: 'images/v4/x-phone-plus.webp?b=5', storage: '512GB' },
+    'x-phone-pro': { id: 'x-phone-pro', name: 'X Phone Pro', price: 1295, image: 'images/v4/x-phone-pro.webp', storage: '1TB' },
+    'x-phone-max': { id: 'x-phone-max', name: 'X Phone Max', price: 1545, image: 'images/v4/x-phone-pro-max.webp', storage: '1.5TB' },
+    'x-phone-elite': { id: 'x-phone-elite', name: 'X Phone Elite', price: 1790, image: 'images/v4/x-phone-ultra.webp', storage: '2TB' },
+    'x-phone-ultra': { id: 'x-phone-ultra', name: 'X Phone Ultra', price: 2299, image: 'images/v4/x-phone-ultra-max.webp', storage: '2TB + Foldable' },
   };
 
   function getCart() {
