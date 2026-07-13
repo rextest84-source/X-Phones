@@ -3,7 +3,7 @@
 
   const products = {
     'x-phone': { id: 'x-phone', name: 'X Phone', price: 899, image: 'images/v4/x-phone.webp?b=3', storage: '256GB' },
-    'x-phone-plus': { id: 'x-phone-plus', name: 'X Phone Plus', price: 1099, image: 'images/v4/x-phone-plus.webp?b=3', storage: '512GB' },
+    'x-phone-plus': { id: 'x-phone-plus', name: 'X Phone Plus', price: 1099, image: 'images/v4/x-phone-plus.webp?b=4', storage: '512GB' },
     'x-phone-pro': { id: 'x-phone-pro', name: 'X Phone Pro', price: 1299, image: 'images/v4/x-phone-pro.webp', storage: '1TB' },
     'x-phone-max': { id: 'x-phone-max', name: 'X Phone Max', price: 1599, image: 'images/v4/x-phone-pro-max.webp', storage: '1.5TB' },
     'x-phone-elite': { id: 'x-phone-elite', name: 'X Phone Elite', price: 1899, image: 'images/v4/x-phone-ultra.webp', storage: '2TB' },
