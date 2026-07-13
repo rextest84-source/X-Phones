@@ -27,13 +27,19 @@
   }
 
   orderItemsEl.innerHTML = cart.map((item) => `
-    <div class="flex gap-4 items-center bg-zinc-900 rounded-2xl p-4">
-      <img src="${item.image}" width="64" height="64" class="w-16 h-16 shrink-0 object-cover rounded-xl" alt="${item.name}">
-      <div class="flex-1 min-w-0">
-        <h3 class="font-bold text-white truncate">${item.name}</h3>
-        <p class="text-zinc-400 text-sm">${item.storage} · Qty ${item.qty}</p>
+    <div class="bg-zinc-900 rounded-2xl p-4">
+      <div class="flex gap-4 items-center">
+        <img src="${item.image}" width="64" height="64" class="w-16 h-16 shrink-0 object-cover rounded-xl" alt="${item.name}">
+        <div class="flex-1 min-w-0">
+          <h3 class="font-bold text-white truncate">${item.name}</h3>
+          <p class="text-zinc-400 text-sm">${item.storage} · Qty ${item.qty}</p>
+        </div>
       </div>
-      <p class="font-semibold text-blue-400 shrink-0">${formatPrice(item.price * item.qty)}</p>
+      <div class="mt-3 pt-3 border-t border-white/10 text-right">
+        ${item.wasPrice ? `<p class="text-sm text-zinc-500 line-through">${formatPrice(item.wasPrice * item.qty)}</p>` : ''}
+        <p class="font-semibold text-blue-400">${formatPrice(item.price * item.qty)}</p>
+        ${item.wasPrice ? `<p class="text-xs text-green-400 mt-0.5">Save ${formatPrice((item.wasPrice - item.price) * item.qty)}</p>` : ''}
+      </div>
     </div>
   `).join('');
 
@@ -70,11 +76,20 @@
 
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
+
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      return;
+    }
+
     submitButton.disabled = true;
     submitButton.textContent = 'Processing...';
 
-    // In a real app, call your backend here to create a PaymentIntent
-    alert('Demo: Payment would be processed here with Stripe.\n\nIn production, connect to your backend.');
+    const name = document.getElementById('full-name').value.trim();
+    const email = document.getElementById('email').value.trim();
+
+    // In a real app, send cart + customer details to your backend to create a PaymentIntent
+    alert(`Demo: Payment would be processed here with Stripe.\n\nCustomer: ${name}\nEmail: ${email}\n\nIn production, connect to your backend.`);
 
     submitButton.disabled = false;
     submitButton.textContent = 'Pay Securely Now';
