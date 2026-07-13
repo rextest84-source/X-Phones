@@ -11,64 +11,74 @@
   <div id="site-nav" data-active="home"></div>
 
   <!-- Hero -->
-  <section class="min-h-screen flex items-center bg-gradient-to-br from-zinc-950 to-black pt-20">
-    <div class="max-w-7xl mx-auto px-6 text-center">
-      <h1 class="text-7xl md:text-8xl font-bold mb-6">X Phone</h1>
-      <p class="text-4xl text-blue-400 mb-8">The phone that understands the universe.</p>
-      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-        <a href="shop.html" class="inline-block px-16 py-6 bg-white text-black font-bold text-2xl rounded-2xl hover:bg-blue-400 transition">Shop Now</a>
-        <a href="vision.html" class="inline-block px-16 py-6 border border-white/20 font-bold text-2xl rounded-2xl hover:border-blue-400 hover:text-blue-400 transition">The Vision</a>
+  <section class="relative min-h-[100dvh] flex items-center justify-center bg-gradient-to-b from-zinc-950 via-black to-black pt-24 pb-32 sm:pb-24 px-4 sm:px-6 overflow-hidden">
+    <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_rgba(59,130,246,0.12)_0%,_transparent_55%)] pointer-events-none"></div>
+    <div class="relative max-w-4xl mx-auto text-center w-full">
+      <p class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-blue-500/30 bg-blue-500/10 text-blue-400 text-xs sm:text-sm font-semibold tracking-wide mb-6 sm:mb-8">
+        Built by Elon Musk · Powered by Grok
+      </p>
+      <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold mb-4 sm:mb-6 leading-[1.05] tracking-tight">
+        <span class="text-blue-400">X</span> Phone
+      </h1>
+      <p class="text-lg sm:text-2xl md:text-3xl text-zinc-300 mb-8 sm:mb-10 max-w-2xl mx-auto leading-relaxed px-2">
+        The phone that understands the universe.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center max-w-md sm:max-w-none mx-auto">
+        <a href="shop.html" class="inline-block w-full sm:w-auto px-10 sm:px-16 py-4 sm:py-5 bg-white text-black font-bold text-lg sm:text-xl rounded-2xl hover:bg-blue-400 transition shadow-lg shadow-white/5">Shop Now</a>
+        <a href="vision.html" class="inline-block w-full sm:w-auto px-10 sm:px-16 py-4 sm:py-5 border border-white/20 font-bold text-lg sm:text-xl rounded-2xl hover:border-blue-400 hover:text-blue-400 transition">The Vision</a>
       </div>
     </div>
   </section>
 
-  <!-- Models -->
-  <section class="py-24 bg-zinc-950">
-    <div class="max-w-7xl mx-auto px-6">
-      <h2 class="text-5xl font-bold text-center mb-4">The X Phone Collection</h2>
-      <p class="text-center text-zinc-400 text-xl mb-16"><a href="vision.html" class="hover:text-blue-400">Learn about our vision</a> · <a href="shop.html" class="hover:text-blue-400">Shop all models</a></p>
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
+  <!-- Models (Features) -->
+  <section class="py-16 sm:py-24 bg-zinc-950 border-t border-white/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-10 sm:mb-16">
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-3">The X Phone Collection</h2>
+        <p class="text-zinc-400 text-base sm:text-xl"><a href="vision.html" class="hover:text-blue-400 transition">Learn about our vision</a> · <a href="shop.html" class="hover:text-blue-400 transition">Shop all models</a></p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-10">
 
-        <a href="x-phone.html" class="group block hover:opacity-90 transition">
-          <img src="images/v4/x-phone.webp?b=3" width="800" height="600" loading="lazy" decoding="async" class="w-full aspect-[4/3] object-cover rounded-3xl mb-6 bg-zinc-900" alt="X Phone">
-          <h3 class="text-3xl font-bold">X Phone</h3>
-          <p class="text-zinc-400 text-lg">256GB</p>
-          <div data-product-price="x-phone" data-price-size="sm" class="mb-4"></div>
+        <a href="x-phone.html" class="group block bg-zinc-900/80 border border-white/5 rounded-3xl p-4 sm:p-0 sm:bg-transparent sm:border-0 hover:border-white/10 sm:hover:border-0 transition">
+          <img src="images/v4/x-phone.webp?b=3" width="800" height="600" loading="lazy" decoding="async" class="w-full aspect-[4/3] object-cover rounded-2xl sm:rounded-3xl mb-4 sm:mb-6 bg-zinc-900 group-hover:opacity-95 transition" alt="X Phone">
+          <h3 class="text-xl sm:text-3xl font-bold group-hover:text-blue-400 transition">X Phone</h3>
+          <p class="text-zinc-400 text-sm sm:text-lg mt-1">256GB · Grok Assistant</p>
+          <div data-product-price="x-phone" data-price-size="sm" class="mt-2 mb-1 sm:mb-4"></div>
         </a>
 
-        <a href="x-phone-plus.html" class="group block hover:opacity-90 transition">
-          <img src="images/v4/x-phone-plus.webp?b=5" width="800" height="600" loading="lazy" decoding="async" class="w-full aspect-[4/3] object-cover rounded-3xl mb-6 bg-zinc-900" alt="X Phone Plus">
-          <h3 class="text-3xl font-bold">X Phone Plus</h3>
-          <p class="text-zinc-400 text-lg">512GB</p>
-          <div data-product-price="x-phone-plus" data-price-size="sm" class="mb-4"></div>
+        <a href="x-phone-plus.html" class="group block bg-zinc-900/80 border border-white/5 rounded-3xl p-4 sm:p-0 sm:bg-transparent sm:border-0 hover:border-white/10 sm:hover:border-0 transition">
+          <img src="images/v4/x-phone-plus.webp?b=5" width="800" height="600" loading="lazy" decoding="async" class="w-full aspect-[4/3] object-cover rounded-2xl sm:rounded-3xl mb-4 sm:mb-6 bg-zinc-900 group-hover:opacity-95 transition" alt="X Phone Plus">
+          <h3 class="text-xl sm:text-3xl font-bold group-hover:text-blue-400 transition">X Phone Plus</h3>
+          <p class="text-zinc-400 text-sm sm:text-lg mt-1">512GB · Hexa lens</p>
+          <div data-product-price="x-phone-plus" data-price-size="sm" class="mt-2 mb-1 sm:mb-4"></div>
         </a>
 
-        <a href="x-phone-pro.html" class="group block hover:opacity-90 transition scale-105">
-          <img src="images/v4/x-phone-pro.webp" width="800" height="600" loading="eager" fetchpriority="high" decoding="async" class="w-full aspect-[4/3] object-cover rounded-3xl mb-6 bg-zinc-900" alt="X Phone Pro">
-          <h3 class="text-3xl font-bold">X Phone Pro</h3>
-          <p class="text-zinc-400 text-lg">1TB</p>
-          <div data-product-price="x-phone-pro" data-price-size="sm" class="mb-4"></div>
+        <a href="x-phone-pro.html" class="group block bg-zinc-900/80 border border-blue-500/40 rounded-3xl p-4 sm:p-0 sm:bg-transparent sm:border-0 sm:ring-0 ring-1 ring-blue-500/30 lg:scale-105 transition">
+          <img src="images/v4/x-phone-pro.webp" width="800" height="600" loading="eager" fetchpriority="high" decoding="async" class="w-full aspect-[4/3] object-cover rounded-2xl sm:rounded-3xl mb-4 sm:mb-6 bg-zinc-900 group-hover:opacity-95 transition" alt="X Phone Pro">
+          <h3 class="text-xl sm:text-3xl font-bold group-hover:text-blue-400 transition">X Phone Pro</h3>
+          <p class="text-zinc-400 text-sm sm:text-lg mt-1">1TB · Grok 5 on-device</p>
+          <div data-product-price="x-phone-pro" data-price-size="sm" class="mt-2 mb-1 sm:mb-4"></div>
         </a>
 
-        <a href="x-phone-max.html" class="group block hover:opacity-90 transition">
-          <img src="images/v4/x-phone-pro-max.webp" width="800" height="600" loading="lazy" decoding="async" class="w-full aspect-[4/3] object-cover rounded-3xl mb-6 bg-zinc-900" alt="X Phone Max">
-          <h3 class="text-3xl font-bold">X Phone Max</h3>
-          <p class="text-zinc-400 text-lg">1.5TB</p>
-          <div data-product-price="x-phone-max" data-price-size="sm" class="mb-4"></div>
+        <a href="x-phone-max.html" class="group block bg-zinc-900/80 border border-white/5 rounded-3xl p-4 sm:p-0 sm:bg-transparent sm:border-0 hover:border-white/10 sm:hover:border-0 transition">
+          <img src="images/v4/x-phone-pro-max.webp" width="800" height="600" loading="lazy" decoding="async" class="w-full aspect-[4/3] object-cover rounded-2xl sm:rounded-3xl mb-4 sm:mb-6 bg-zinc-900 group-hover:opacity-95 transition" alt="X Phone Max">
+          <h3 class="text-xl sm:text-3xl font-bold group-hover:text-blue-400 transition">X Phone Max</h3>
+          <p class="text-zinc-400 text-sm sm:text-lg mt-1">1.5TB · Priority Starlink</p>
+          <div data-product-price="x-phone-max" data-price-size="sm" class="mt-2 mb-1 sm:mb-4"></div>
         </a>
 
-        <a href="x-phone-elite.html" class="group block hover:opacity-90 transition">
-          <img src="images/v4/x-phone-ultra.webp" width="800" height="600" loading="lazy" decoding="async" class="w-full aspect-[4/3] object-cover rounded-3xl mb-6 bg-zinc-900" alt="X Phone Elite">
-          <h3 class="text-3xl font-bold">X Phone Elite</h3>
-          <p class="text-zinc-400 text-lg">2TB</p>
-          <div data-product-price="x-phone-elite" data-price-size="sm" class="mb-4"></div>
+        <a href="x-phone-elite.html" class="group block bg-zinc-900/80 border border-white/5 rounded-3xl p-4 sm:p-0 sm:bg-transparent sm:border-0 hover:border-white/10 sm:hover:border-0 transition">
+          <img src="images/v4/x-phone-ultra.webp" width="800" height="600" loading="lazy" decoding="async" class="w-full aspect-[4/3] object-cover rounded-2xl sm:rounded-3xl mb-4 sm:mb-6 bg-zinc-900 group-hover:opacity-95 transition" alt="X Phone Elite">
+          <h3 class="text-xl sm:text-3xl font-bold group-hover:text-blue-400 transition">X Phone Elite</h3>
+          <p class="text-zinc-400 text-sm sm:text-lg mt-1">2TB · Neural Link ready</p>
+          <div data-product-price="x-phone-elite" data-price-size="sm" class="mt-2 mb-1 sm:mb-4"></div>
         </a>
 
-        <a href="x-phone-ultra.html" class="group block hover:opacity-90 transition">
-          <img src="images/v4/x-phone-ultra-max.webp" width="800" height="600" loading="lazy" decoding="async" class="w-full aspect-[4/3] object-cover rounded-3xl mb-6 bg-zinc-900" alt="X Phone Ultra">
-          <h3 class="text-3xl font-bold">X Phone Ultra</h3>
-          <p class="text-zinc-400 text-lg">2TB + Foldable</p>
-          <div data-product-price="x-phone-ultra" data-price-size="sm" class="mb-4"></div>
+        <a href="x-phone-ultra.html" class="group block bg-zinc-900/80 border border-white/5 rounded-3xl p-4 sm:p-0 sm:bg-transparent sm:border-0 hover:border-white/10 sm:hover:border-0 transition">
+          <img src="images/v4/x-phone-ultra-max.webp" width="800" height="600" loading="lazy" decoding="async" class="w-full aspect-[4/3] object-cover rounded-2xl sm:rounded-3xl mb-4 sm:mb-6 bg-zinc-900 group-hover:opacity-95 transition" alt="X Phone Ultra">
+          <h3 class="text-xl sm:text-3xl font-bold group-hover:text-blue-400 transition">X Phone Ultra</h3>
+          <p class="text-zinc-400 text-sm sm:text-lg mt-1">2TB + Foldable · Full Neural Link</p>
+          <div data-product-price="x-phone-ultra" data-price-size="sm" class="mt-2 mb-1 sm:mb-4"></div>
         </a>
 
       </div>
