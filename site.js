@@ -3,6 +3,7 @@
     home: { home: true },
     shop: { shop: true },
     vision: { vision: true },
+    cart: { cart: true },
     product: {},
   };
 
@@ -21,6 +22,7 @@
         ${navLink('index.html', 'Home', active.home)}
         ${navLink('shop.html', 'Shop', active.shop)}
         ${navLink('vision.html', 'Vision', active.vision)}
+        ${navLink('cart.html', 'Cart', active.cart)}
       </div>
     </div>
   </nav>`;
@@ -37,6 +39,7 @@
           <a href="index.html" class="text-zinc-400 hover:text-white">Home</a>
           <a href="shop.html" class="text-zinc-400 hover:text-white">Shop</a>
           <a href="vision.html" class="text-zinc-400 hover:text-white">The Vision</a>
+          <a href="cart.html" class="text-zinc-400 hover:text-white">Cart</a>
         </div>
       </div>
       <div>
