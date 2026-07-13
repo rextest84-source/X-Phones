@@ -26,6 +26,6 @@ Then open http://localhost:8080
 ```
 index.html          Home page
 shop.html           Shop page
-images/             X Phone product photos (PNG)
+images/             X Phone product photos (WebP, optimized)
 netlify.toml        Netlify publish settings
 ```
