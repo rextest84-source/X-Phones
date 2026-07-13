@@ -2,12 +2,12 @@
   const CART_KEY = 'xphones-cart';
 
   const products = {
-    'x-phone': { id: 'x-phone', name: 'X Phone', price: 780, image: 'images/v4/x-phone.webp?b=3', storage: '256GB' },
-    'x-phone-plus': { id: 'x-phone-plus', name: 'X Phone Plus', price: 1029, image: 'images/v4/x-phone-plus.webp?b=5', storage: '512GB' },
-    'x-phone-pro': { id: 'x-phone-pro', name: 'X Phone Pro', price: 1295, image: 'images/v4/x-phone-pro.webp', storage: '1TB' },
-    'x-phone-max': { id: 'x-phone-max', name: 'X Phone Max', price: 1545, image: 'images/v4/x-phone-pro-max.webp', storage: '1.5TB' },
-    'x-phone-elite': { id: 'x-phone-elite', name: 'X Phone Elite', price: 1790, image: 'images/v4/x-phone-ultra.webp', storage: '2TB' },
-    'x-phone-ultra': { id: 'x-phone-ultra', name: 'X Phone Ultra', price: 2299, image: 'images/v4/x-phone-ultra-max.webp', storage: '2TB + Foldable' },
+    'x-phone': { id: 'x-phone', name: 'X Phone', price: 780, wasPrice: 899, image: 'images/v4/x-phone.webp?b=3', storage: '256GB' },
+    'x-phone-plus': { id: 'x-phone-plus', name: 'X Phone Plus', price: 1029, wasPrice: 1099, image: 'images/v4/x-phone-plus.webp?b=5', storage: '512GB' },
+    'x-phone-pro': { id: 'x-phone-pro', name: 'X Phone Pro', price: 1295, wasPrice: 1299, image: 'images/v4/x-phone-pro.webp', storage: '1TB' },
+    'x-phone-max': { id: 'x-phone-max', name: 'X Phone Max', price: 1545, wasPrice: 1599, image: 'images/v4/x-phone-pro-max.webp', storage: '1.5TB' },
+    'x-phone-elite': { id: 'x-phone-elite', name: 'X Phone Elite', price: 1790, wasPrice: 1899, image: 'images/v4/x-phone-ultra.webp', storage: '2TB' },
+    'x-phone-ultra': { id: 'x-phone-ultra', name: 'X Phone Ultra', price: 2299, wasPrice: 2499, image: 'images/v4/x-phone-ultra-max.webp', storage: '2TB + Foldable' },
   };
 
   function getCart() {
@@ -22,8 +22,46 @@
     localStorage.setItem(CART_KEY, JSON.stringify(cart));
   }
 
+  const priceSizes = {
+    sm: { was: 'text-base', now: 'text-2xl', save: 'text-xs', gap: 'gap-x-2' },
+    md: { was: 'text-lg', now: 'text-3xl', save: 'text-sm', gap: 'gap-x-3' },
+    lg: { was: 'text-xl', now: 'text-4xl', save: 'text-sm', gap: 'gap-x-3' },
+  };
+
   function formatPrice(amount) {
     return '$' + amount.toLocaleString();
+  }
+
+  function renderPriceHTML(productId, size) {
+    const product = products[productId];
+    if (!product) return '';
+
+    const { price, wasPrice } = product;
+    const savings = wasPrice - price;
+    const pct = Math.round((savings / wasPrice) * 100);
+    const s = priceSizes[size] || priceSizes.lg;
+
+    if (size === 'inline') {
+      return `<span class="text-zinc-500 line-through">${formatPrice(wasPrice)}</span> <span class="text-blue-400 font-semibold">${formatPrice(price)}</span>`;
+    }
+
+    return `
+      <div class="price-display">
+        <div class="flex flex-wrap items-baseline ${s.gap} gap-y-1">
+          <span class="${s.was} text-zinc-500 line-through">${formatPrice(wasPrice)}</span>
+          <span class="${s.now} font-semibold text-blue-400">${formatPrice(price)}</span>
+        </div>
+        <p class="${s.save} text-green-400 font-medium mt-1">Save ${formatPrice(savings)} (${pct}% off)</p>
+      </div>`;
+  }
+
+  function initPriceDisplays() {
+    document.querySelectorAll('[data-product-price]').forEach((el) => {
+      el.innerHTML = renderPriceHTML(el.dataset.productPrice, el.dataset.priceSize || 'lg');
+    });
+    document.querySelectorAll('[data-product-price-inline]').forEach((el) => {
+      el.innerHTML = renderPriceHTML(el.dataset.productPriceInline, 'inline');
+    });
   }
 
   window.XPhonesCart = {
@@ -48,6 +86,7 @@
       return cart.reduce((sum, item) => sum + item.price * item.qty, 0);
     },
     formatPrice,
+    renderPriceHTML,
   };
 
   document.querySelectorAll('[data-add-to-cart]').forEach((btn) => {
@@ -85,7 +124,11 @@
             </div>
           </div>
           <div class="flex items-center justify-between mt-4 pt-4 border-t border-white/10">
-            <p class="text-xl sm:text-2xl font-semibold text-blue-400">${formatPrice(item.price * item.qty)}</p>
+            <div>
+              ${item.wasPrice ? `<p class="text-sm text-zinc-500 line-through">${formatPrice(item.wasPrice * item.qty)}</p>` : ''}
+              <p class="text-xl sm:text-2xl font-semibold text-blue-400">${formatPrice(item.price * item.qty)}</p>
+              ${item.wasPrice ? `<p class="text-xs text-green-400 mt-0.5">Save ${formatPrice((item.wasPrice - item.price) * item.qty)}</p>` : ''}
+            </div>
             <button type="button" data-remove="${item.id}" class="text-zinc-400 hover:text-white text-sm font-medium px-3 py-2 rounded-lg hover:bg-white/5">Remove</button>
           </div>
         </div>
@@ -103,4 +146,6 @@
 
     renderCart();
   }
+
+  initPriceDisplays();
 })();
