@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Checkout — X Phones</title>
+  <script src="https://js.stripe.com/v3/"></script>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-black text-white">
@@ -18,51 +19,29 @@
       <!-- Order Summary -->
       <div class="order-2 md:order-1">
         <h2 class="text-xl sm:text-2xl font-semibold mb-6">Order Summary</h2>
-        <div id="order-items" class="space-y-4 sm:space-y-6"></div>
-        <div class="border-t border-white/20 pt-6 mt-8">
-          <div class="flex justify-between text-lg sm:text-xl">
-            <span>Total</span>
-            <span class="font-bold text-blue-400" id="total-price">$0</span>
-          </div>
+        <div id="order-items" class="space-y-4 sm:space-y-6 text-zinc-300"></div>
+        <div class="border-t border-white/20 pt-6 mt-8 text-right">
+          <p class="text-2xl sm:text-3xl font-bold text-blue-400" id="total-price">$0</p>
         </div>
         <p class="mt-6 text-zinc-400 text-sm"><a href="cart.html" class="text-blue-400 hover:underline">← Back to cart</a></p>
       </div>
 
-      <!-- Payment Form -->
+      <!-- Payment -->
       <div class="order-1 md:order-2">
-        <h2 class="text-xl sm:text-2xl font-semibold mb-6">Payment Details</h2>
-        <form class="space-y-5 sm:space-y-6" id="checkout-form">
-          <div>
-            <label class="block text-sm mb-2 text-zinc-300" for="full-name">Full Name</label>
-            <input id="full-name" type="text" required class="w-full bg-zinc-900 border border-white/30 rounded-xl px-5 py-4 focus:outline-none focus:border-blue-400 transition" placeholder="John Doe">
+        <h2 class="text-xl sm:text-2xl font-semibold mb-6">Payment Information</h2>
+        <form id="payment-form">
+          <div class="mb-6">
+            <label class="block text-sm mb-2 text-zinc-300">Card Details</label>
+            <div id="card-element" class="bg-zinc-900 border border-white/30 rounded-xl p-5"></div>
+            <p id="card-errors" class="text-red-400 text-sm mt-2 hidden" role="alert"></p>
           </div>
-          <div>
-            <label class="block text-sm mb-2 text-zinc-300" for="email">Email Address</label>
-            <input id="email" type="email" required class="w-full bg-zinc-900 border border-white/30 rounded-xl px-5 py-4 focus:outline-none focus:border-blue-400 transition" placeholder="you@email.com">
-          </div>
-          <div>
-            <label class="block text-sm mb-2 text-zinc-300" for="address">Shipping Address</label>
-            <textarea id="address" required class="w-full bg-zinc-900 border border-white/30 rounded-xl px-5 py-4 h-24 focus:outline-none focus:border-blue-400 transition resize-none" placeholder="123 Main Street..."></textarea>
-          </div>
-          <div>
-            <label class="block text-sm mb-2 text-zinc-300" for="card">Card Information</label>
-            <input id="card" type="text" required class="w-full bg-zinc-900 border border-white/30 rounded-xl px-5 py-4 focus:outline-none focus:border-blue-400 transition" placeholder="4242 4242 4242 4242">
-          </div>
-          <div class="grid grid-cols-2 gap-4 sm:gap-6">
-            <div>
-              <label class="block text-sm mb-2 text-zinc-300" for="expiry">Expiry Date</label>
-              <input id="expiry" type="text" required class="w-full bg-zinc-900 border border-white/30 rounded-xl px-5 py-4 focus:outline-none focus:border-blue-400 transition" placeholder="MM/YY">
-            </div>
-            <div>
-              <label class="block text-sm mb-2 text-zinc-300" for="cvc">CVC</label>
-              <input id="cvc" type="text" required class="w-full bg-zinc-900 border border-white/30 rounded-xl px-5 py-4 focus:outline-none focus:border-blue-400 transition" placeholder="123">
-            </div>
-          </div>
-          <button type="submit" class="w-full py-5 sm:py-6 bg-emerald-500 hover:bg-emerald-600 text-white font-bold text-lg sm:text-xl rounded-2xl mt-4 sm:mt-8 transition">
+
+          <button id="submit-button" type="submit"
+                  class="w-full py-5 sm:py-6 bg-emerald-500 hover:bg-emerald-600 text-white font-bold text-lg sm:text-xl rounded-2xl disabled:opacity-50 transition">
             Pay Securely Now
           </button>
         </form>
-        <p class="text-center text-xs text-zinc-500 mt-6 sm:mt-8">Powered by Stripe · Secure Checkout</p>
+        <p class="text-center text-xs text-zinc-500 mt-6 sm:mt-8">Secured by Stripe</p>
       </div>
     </div>
   </div>
