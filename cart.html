@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart — X Phones</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black text-white">
+
+  <div id="site-nav" data-active="cart"></div>
+
+  <div class="pt-24 pb-16 max-w-4xl mx-auto px-6">
+    <h1 class="text-5xl font-bold mb-12 text-center">Your Cart</h1>
+    <div id="cart-items" class="space-y-8"></div>
+    <div class="mt-12 border-t border-white/20 pt-8 text-right">
+      <p class="text-3xl">Total: <span id="total" class="font-bold text-blue-400">$0</span></p>
+      <button type="button" class="mt-8 px-16 py-6 bg-blue-500 hover:bg-blue-600 text-white font-bold text-xl rounded-2xl w-full md:w-auto">Proceed to Checkout</button>
+      <p class="mt-6 text-zinc-400"><a href="shop.html" class="text-blue-400 hover:underline">← Continue shopping</a></p>
+    </div>
+  </div>
+
+  <div id="site-footer"></div>
+  <script src="site.js"></script>
+  <script src="cart.js"></script>
+</body>
+</html>
