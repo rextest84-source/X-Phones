@@ -8,29 +8,25 @@
 </head>
 <body class="bg-black text-white">
 
-  <nav class="fixed top-0 w-full bg-black/90 backdrop-blur border-b border-white/10 z-50">
-    <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
-      <h1 class="text-3xl font-bold text-blue-400">X Phones</h1>
-      <div class="flex gap-8 font-medium">
-        <a href="index.html" class="hover:text-blue-400">Home</a>
-        <a href="shop.html" class="hover:text-blue-400">Shop</a>
-      </div>
-    </div>
-  </nav>
+  <div id="site-nav" data-active="home"></div>
 
   <!-- Hero -->
   <section class="min-h-screen flex items-center bg-gradient-to-br from-zinc-950 to-black pt-20">
     <div class="max-w-7xl mx-auto px-6 text-center">
       <h1 class="text-7xl md:text-8xl font-bold mb-6">X Phone</h1>
       <p class="text-4xl text-blue-400 mb-8">The phone that understands the universe.</p>
-      <a href="shop.html" class="inline-block px-16 py-6 bg-white text-black font-bold text-2xl rounded-2xl hover:bg-blue-400 transition">Shop Now</a>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <a href="shop.html" class="inline-block px-16 py-6 bg-white text-black font-bold text-2xl rounded-2xl hover:bg-blue-400 transition">Shop Now</a>
+        <a href="vision.html" class="inline-block px-16 py-6 border border-white/20 font-bold text-2xl rounded-2xl hover:border-blue-400 hover:text-blue-400 transition">The Vision</a>
+      </div>
     </div>
   </section>
 
   <!-- Models -->
   <section class="py-24 bg-zinc-950">
     <div class="max-w-7xl mx-auto px-6">
-      <h2 class="text-5xl font-bold text-center mb-16">The X Phone Collection</h2>
+      <h2 class="text-5xl font-bold text-center mb-4">The X Phone Collection</h2>
+      <p class="text-center text-zinc-400 text-xl mb-16"><a href="vision.html" class="hover:text-blue-400">Learn about our vision</a> · <a href="shop.html" class="hover:text-blue-400">Shop all models</a></p>
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
 
         <a href="x-phone.html" class="group block hover:opacity-90 transition">
@@ -78,5 +74,8 @@
       </div>
     </div>
   </section>
+
+  <div id="site-footer"></div>
+  <script src="site.js"></script>
 </body>
 </html>
