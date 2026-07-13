@@ -3,14 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shop — X Phones</title>
+  <title>Shop — X Phones by Elon Musk</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 </head>
 <body class="bg-black text-white">
 
+  <!-- Nav -->
   <nav class="fixed top-0 w-full bg-black/90 backdrop-blur border-b border-white/10 z-50">
     <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
-      <a href="index.html" class="text-3xl font-bold text-blue-400">X Phones</a>
+      <h1 class="text-3xl font-bold text-blue-400">X Phones</h1>
       <div class="flex gap-8 font-medium">
         <a href="index.html" class="hover:text-blue-400">Home</a>
         <a href="shop.html" class="text-blue-400">Shop</a>
@@ -18,40 +20,111 @@
     </div>
   </nav>
 
-  <section class="pt-32 pb-24 min-h-screen">
-    <div class="max-w-7xl mx-auto px-6">
-      <h1 class="text-6xl font-bold text-center mb-4">Shop X Phones</h1>
-      <p class="text-xl text-zinc-400 text-center mb-16">Choose your connection to the universe.</p>
+  <div class="pt-24 pb-16 max-w-7xl mx-auto px-6">
+    <h1 class="text-5xl font-bold text-center mb-4">Shop X Phones</h1>
+    <p class="text-center text-zinc-400 text-xl mb-16">Built by Elon Musk. Powered by Grok. Ready for the future.</p>
 
-      <div class="grid md:grid-cols-3 gap-12">
+    <div class="grid md:grid-cols-3 gap-10">
 
-        <article class="bg-zinc-950 rounded-3xl p-8 border border-white/10 hover:border-blue-400/50 transition">
-          <img src="images/x-phone.png" class="w-full aspect-[4/3] object-cover rounded-2xl mb-8 bg-zinc-900" alt="X Phone">
-          <h2 class="text-3xl font-bold mb-2">X Phone</h2>
-          <p class="text-zinc-400 mb-4">6.1" OLED · A18X chip · 48MP camera · 128GB</p>
-          <p class="text-blue-400 text-3xl font-bold mb-6">$899</p>
-          <button class="w-full py-4 bg-white text-black font-bold text-lg rounded-xl hover:bg-blue-400 transition">Add to Cart</button>
-        </article>
-
-        <article class="bg-zinc-950 rounded-3xl p-8 border-2 border-blue-400/60 relative">
-          <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-blue-400 text-black text-sm font-bold px-4 py-1 rounded-full">Most Popular</span>
-          <img src="images/x-phone-pro.png" class="w-full aspect-[4/3] object-cover rounded-2xl mb-8 bg-zinc-900" alt="X Phone Pro">
-          <h2 class="text-3xl font-bold mb-2">X Phone Pro</h2>
-          <p class="text-zinc-400 mb-4">6.7" ProMotion · A18X Pro · Triple 48MP · Starlink ready · 256GB</p>
-          <p class="text-blue-400 text-3xl font-bold mb-6">$1,299</p>
-          <button class="w-full py-4 bg-blue-400 text-black font-bold text-lg rounded-xl hover:bg-white transition">Add to Cart</button>
-        </article>
-
-        <article class="bg-zinc-950 rounded-3xl p-8 border border-white/10 hover:border-amber-400/50 transition">
-          <img src="images/x-phone-ultra.png" class="w-full aspect-[4/3] object-cover rounded-2xl mb-8 bg-zinc-900" alt="X Phone Ultra">
-          <h2 class="text-3xl font-bold mb-2">X Phone Ultra</h2>
-          <p class="text-zinc-400 mb-4">6.9" LTPO · A18X Ultra · Quad camera · Neural Link · 512GB</p>
-          <p class="text-blue-400 text-3xl font-bold mb-6">$1,899</p>
-          <button class="w-full py-4 bg-white text-black font-bold text-lg rounded-xl hover:bg-amber-400 transition">Add to Cart</button>
-        </article>
-
+      <!-- X Phone -->
+      <div class="bg-zinc-900 rounded-3xl overflow-hidden group">
+        <img src="images/x-phone.webp" width="800" height="600" loading="lazy" decoding="async" class="w-full h-80 object-cover group-hover:scale-105 transition" alt="X Phone">
+        <div class="p-8">
+          <h3 class="text-3xl font-bold">X Phone</h3>
+          <p class="text-blue-400 text-3xl font-semibold mt-2">$899</p>
+          <ul class="mt-6 space-y-2 text-zinc-400">
+            <li><i class="fa-solid fa-check text-blue-400 mr-2"></i>256GB Storage</li>
+            <li><i class="fa-solid fa-check text-blue-400 mr-2"></i>Grok AI Assistant</li>
+            <li><i class="fa-solid fa-check text-blue-400 mr-2"></i>Starlink Ready</li>
+            <li><i class="fa-solid fa-check text-blue-400 mr-2"></i>6.1" AMOLED Display</li>
+          </ul>
+          <a href="product.html" class="mt-8 block w-full py-4 bg-white text-black text-center rounded-2xl font-bold">Buy Now</a>
+        </div>
       </div>
+
+      <!-- X Phone Plus -->
+      <div class="bg-zinc-900 rounded-3xl overflow-hidden group">
+        <img src="images/x-phone-plus.webp" width="800" height="600" loading="lazy" decoding="async" class="w-full h-80 object-cover group-hover:scale-105 transition" alt="X Phone Plus">
+        <div class="p-8">
+          <h3 class="text-3xl font-bold">X Phone Plus</h3>
+          <p class="text-blue-400 text-3xl font-semibold mt-2">$1,049</p>
+          <ul class="mt-6 space-y-2 text-zinc-400">
+            <li><i class="fa-solid fa-check text-blue-400 mr-2"></i>256GB Storage</li>
+            <li><i class="fa-solid fa-check text-blue-400 mr-2"></i>Grok AI Assistant</li>
+            <li><i class="fa-solid fa-check text-blue-400 mr-2"></i>6.4" AMOLED Display</li>
+            <li><i class="fa-solid fa-check text-blue-400 mr-2"></i>48MP Dual Camera</li>
+          </ul>
+          <a href="product.html" class="mt-8 block w-full py-4 bg-white text-black text-center rounded-2xl font-bold">Buy Now</a>
+        </div>
+      </div>
+
+      <!-- X Phone Pro -->
+      <div class="bg-zinc-900 rounded-3xl overflow-hidden group border-2 border-blue-500">
+        <img src="images/x-phone-pro.webp" width="800" height="600" loading="eager" fetchpriority="high" decoding="async" class="w-full h-80 object-cover group-hover:scale-105 transition" alt="X Phone Pro">
+        <div class="p-8">
+          <h3 class="text-3xl font-bold">X Phone Pro</h3>
+          <p class="text-blue-400 text-3xl font-semibold mt-2">$1,299</p>
+          <ul class="mt-6 space-y-2 text-zinc-400">
+            <li><i class="fa-solid fa-check text-blue-400 mr-2"></i>512GB Storage</li>
+            <li><i class="fa-solid fa-check text-blue-400 mr-2"></i>Grok 5 On-Device</li>
+            <li><i class="fa-solid fa-check text-blue-400 mr-2"></i>Titanium Build</li>
+            <li><i class="fa-solid fa-check text-blue-400 mr-2"></i>200MP Camera System</li>
+            <li><i class="fa-solid fa-check text-blue-400 mr-2"></i>Full Starlink Integration</li>
+          </ul>
+          <a href="product.html" class="mt-8 block w-full py-4 bg-blue-500 text-white text-center rounded-2xl font-bold">Pre-order Pro</a>
+        </div>
+      </div>
+
+      <!-- X Phone Pro Max -->
+      <div class="bg-zinc-900 rounded-3xl overflow-hidden group">
+        <img src="images/x-phone-pro-max.webp" width="800" height="600" loading="lazy" decoding="async" class="w-full h-80 object-cover group-hover:scale-105 transition" alt="X Phone Pro Max">
+        <div class="p-8">
+          <h3 class="text-3xl font-bold">X Phone Pro Max</h3>
+          <p class="text-blue-400 text-3xl font-semibold mt-2">$1,549</p>
+          <ul class="mt-6 space-y-2 text-zinc-400">
+            <li><i class="fa-solid fa-check text-blue-400 mr-2"></i>512GB Storage</li>
+            <li><i class="fa-solid fa-check text-blue-400 mr-2"></i>Grok 5 On-Device</li>
+            <li><i class="fa-solid fa-check text-blue-400 mr-2"></i>6.9" ProMotion Display</li>
+            <li><i class="fa-solid fa-check text-blue-400 mr-2"></i>200MP Camera System</li>
+          </ul>
+          <a href="product.html" class="mt-8 block w-full py-4 bg-white text-black text-center rounded-2xl font-bold">Buy Pro Max</a>
+        </div>
+      </div>
+
+      <!-- X Phone Ultra -->
+      <div class="bg-zinc-900 rounded-3xl overflow-hidden group">
+        <img src="images/x-phone-ultra.webp" width="800" height="600" loading="lazy" decoding="async" class="w-full h-80 object-cover group-hover:scale-105 transition" alt="X Phone Ultra">
+        <div class="p-8">
+          <h3 class="text-3xl font-bold">X Phone Ultra</h3>
+          <p class="text-blue-400 text-3xl font-semibold mt-2">$1,899</p>
+          <ul class="mt-6 space-y-2 text-zinc-400">
+            <li><i class="fa-solid fa-check text-blue-400 mr-2"></i>1TB Storage</li>
+            <li><i class="fa-solid fa-check text-blue-400 mr-2"></i>Massive Battery</li>
+            <li><i class="fa-solid fa-check text-blue-400 mr-2"></i>Neural Link Ready</li>
+            <li><i class="fa-solid fa-check text-blue-400 mr-2"></i>Professional Camera Array</li>
+          </ul>
+          <a href="product.html" class="mt-8 block w-full py-4 bg-white text-black text-center rounded-2xl font-bold">Buy Ultra</a>
+        </div>
+      </div>
+
+      <!-- X Phone Ultra Max -->
+      <div class="bg-zinc-900 rounded-3xl overflow-hidden group">
+        <img src="images/x-phone-ultra-max.webp" width="800" height="600" loading="lazy" decoding="async" class="w-full h-80 object-cover group-hover:scale-105 transition" alt="X Phone Ultra Max">
+        <div class="p-8">
+          <h3 class="text-3xl font-bold">X Phone Ultra Max</h3>
+          <p class="text-blue-400 text-3xl font-semibold mt-2">$2,299</p>
+          <ul class="mt-6 space-y-2 text-zinc-400">
+            <li><i class="fa-solid fa-check text-blue-400 mr-2"></i>1TB Storage</li>
+            <li><i class="fa-solid fa-check text-blue-400 mr-2"></i>Foldable Option</li>
+            <li><i class="fa-solid fa-check text-blue-400 mr-2"></i>Neural Link Ready</li>
+            <li><i class="fa-solid fa-check text-blue-400 mr-2"></i>Quad Camera Array</li>
+          </ul>
+          <a href="product.html" class="mt-8 block w-full py-4 bg-white text-black text-center rounded-2xl font-bold">Buy Ultra Max</a>
+        </div>
+      </div>
+
     </div>
-  </section>
+  </div>
+
 </body>
 </html>
