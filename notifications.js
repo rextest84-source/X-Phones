@@ -16,7 +16,7 @@
   document.head.appendChild(style);
 
   const popupHtml = `
-<div id="purchase-popup" class="fixed bottom-4 left-4 z-40 w-[17.5rem] max-w-[calc(100vw-2rem)] bg-zinc-900/95 backdrop-blur border border-white/10 rounded-xl shadow-lg p-3 hidden" role="status" aria-live="polite">
+<div id="purchase-popup" class="fixed bottom-20 sm:bottom-4 left-4 z-40 w-[17.5rem] max-w-[calc(100vw-2rem)] bg-zinc-900/95 backdrop-blur border border-white/10 rounded-xl shadow-lg p-3 hidden" role="status" aria-live="polite">
   <div class="flex items-start gap-3">
     <div class="w-8 h-8 bg-emerald-500/15 border border-emerald-500/30 rounded-full flex items-center justify-center shrink-0">
       <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
