@@ -1,0 +1,99 @@
+================================================================================
+HEYGEN — JIM HARLAN 95s (2 SCENES) + LOGO POP-UPS + ELON @ 10s
+Copy each section in order. Upload images/popups/*.png first (see OVERLAYS).
+================================================================================
+
+AVATAR — UPLOAD images/avatars/avatar-jim-harlan-male-podcast.png
+
+================================================================================
+MASTER PROMPT (~500 words) — paste into HeyGen project notes / scene direction
+================================================================================
+
+Create a ninety-five second, two-scene marketing video for X Phones featuring Dr. James Jim Harlan, VP of Product, speaking directly to camera in a premium dark podcast studio. Jim is a confident American male in his mid-forties with a light Texas accent. He wears a black crew-neck t-shirt with OCCUPY MARS in bold white block letters across the chest. The shirt text must stay readable whenever the torso is visible. Lighting is cinematic: soft key light on the face, subtle rim light, shallow depth of field, and a blurred background with warm amber practical lights. Audio is clean studio voiceover with no music bed under dialogue.
+
+Camera framing is critical. Do not use extreme close-ups or tight face crops. Scene one uses a medium-wide front angle: camera at eye level, subject framed from roughly mid-torso up so the OCCUPY MARS shirt and natural hand gestures are visible. Leave comfortable headroom. Scene two uses a medium chest-up angle from about twenty degrees off center to the subject’s right, still showing shoulders and upper chest, not a zoomed face portrait. Between scenes, use a Zoom In transition lasting zero point eight seconds to hide any voice seam. Keep each scene under sixty seconds.
+
+Use the same voice profile in both scenes: American male, mid-forties, light Texas drawl, confident and warm, measured pace at zero point nine manual speed. Jim opens scene one with Hello everyone, not Good evening. He never reads a website URL on screen or aloud.
+
+Overlay and pop-up graphics are mandatory whenever Jim names Elon Musk, SpaceX, Starlink, Neuralink, Grok, or xAI. After generating each scene, open the timeline editor and add image overlay elements using the uploaded PNG assets in images/popups/. Place each graphic in the upper-right or lower-right safe zone so it never covers Jim’s face or the OCCUPY MARS text. Each pop-up should fade in over zero point three seconds, hold two to three seconds, then fade out over zero point three seconds. Use a subtle drop shadow so logos read on the dark background.
+
+Timing for scene one overlays, measured from the start of scene one audio: at exactly ten seconds, show popup-elon-musk.png when Jim first says Elon Musk in the line before we talk about devices, I want you to understand the mission Elon Musk is building. At about twelve seconds, show popup-spacex.png on SpaceX for Mars. At about fourteen seconds, show popup-starlink.png on Starlink for connectivity. At about sixteen seconds, show popup-neuralink.png on Neuralink for the human interface. At about eighteen seconds, show popup-grok-xai.png when he says Grok inside xAI for intelligence on device. If HeyGen supports keyword-triggered overlays, bind the same assets to those spoken keywords as a fallback.
+
+Scene one script covers Jim’s bio, Elon’s four pillars, and the X Phone fleet mission without any prices. Scene two covers the full six-model lineup with spoken sale prices only: seven hundred eighty, one thousand twenty-nine, one thousand two hundred ninety-five, one thousand five hundred forty-five, one thousand seven hundred ninety, and two thousand two hundred ninety-nine dollars. Scene two may reuse Grok or Starlink mentions; repeat the same logo pop-ups at those moments. Close scene two with Terafab tease and Occupy Mars energy. Export at sixteen by nine, ten eighty p, with pop-ups baked into the final render.
+
+================================================================================
+OVERLAYS — upload these PNGs to HeyGen before editing timeline
+================================================================================
+
+images/popups/popup-elon-musk.png      → Elon photo (REQUIRED at 0:10 in Scene 1)
+images/popups/popup-spacex.png         → SpaceX logo (~0:12)
+images/popups/popup-starlink.png       → Starlink logo (~0:14)
+images/popups/popup-neuralink.png      → Neuralink logo (~0:16)
+images/popups/popup-grok-xai.png       → Grok / xAI logo (~0:18)
+
+Pop-up rules: upper-right or lower-right · fade 0.3s in · hold 2–3s · fade 0.3s out · never cover face or shirt text
+
+================================================================================
+SCENE 1 — ~53 seconds | NO PRICES | medium-wide front (NOT tight face zoom)
+================================================================================
+
+LOOK / CAMERA (paste into Scene 1 Look prompt):
+
+Medium-wide front angle, eye level. Frame Jim from mid-torso up with visible OCCUPY MARS shirt and hand room. Comfortable headroom. Premium dark podcast studio, soft key plus rim light, shallow depth of field, warm bokeh background. Do not zoom into face. Leave space upper-right and lower-right for logo pop-up overlays.
+
+SCRIPT (Scene 1 — paste as dialogue):
+
+Hello everyone. I am Dr. James Jim Harlan, Vice President of Product at X Phones, based in Austin, Texas. Before we talk about devices, I want you to understand the mission Elon Musk is building. SpaceX for Mars. Starlink for connectivity. Neuralink for the human interface. Grok inside xAI for intelligence on device. I started at SpaceX, then Starlink, then Neuralink. Now I lead product for the X Phone fleet. These are not ordinary phones. They are mission hardware. Grok is not a chatbot sticker. It is the operating intelligence across the lineup. Starlink readiness is built in from X Phone through X Phone Ultra. We are building the device layer for a multi-planetary future. Six models. One mission. Occupy Mars starts in your pocket.
+
+Voice: American male, mid-forties, light Texas accent, confident, warm, 0.90x speed.
+
+TIMELINE OVERLAYS (Scene 1 — add after generation):
+
+0:10  popup-elon-musk.png   (first "Elon Musk")
+0:12  popup-spacex.png       ("SpaceX")
+0:14  popup-starlink.png     ("Starlink")
+0:16  popup-neuralink.png    ("Neuralink")
+0:18  popup-grok-xai.png     ("Grok" / "xAI")
+
+================================================================================
+TRANSITION — between Scene 1 and Scene 2
+================================================================================
+
+Effect: Zoom In
+Duration: 0.8 seconds
+(Do not use a hard cut — hides voice seam between scenes.)
+
+================================================================================
+SCENE 2 — ~36 seconds | PRICES | medium chest-up 20° right (NOT tight close-up)
+================================================================================
+
+LOOK / CAMERA (paste into Scene 2 Look prompt):
+
+Medium chest-up angle, camera about twenty degrees off center to subject's right, eye level. Show shoulders and upper chest with OCCUPY MARS readable. Premium dark studio, same lighting as scene one. Do not use tight face close-up or extreme zoom. Leave overlay safe zones clear.
+
+SCRIPT (Scene 2 — paste as dialogue):
+
+Here is the full X Phone fleet with current pricing. X Phone, seven hundred eighty dollars. X Phone Plus, one thousand twenty-nine. X Phone Pro, twelve hundred ninety-five. X Phone Max, fifteen hundred forty-five. X Phone Elite, seventeen hundred ninety. X Phone Ultra, twenty-two hundred ninety-nine. Every tier adds Grok depth, camera capability, and Starlink readiness. X Phone Ultra is the flagship for builders who want everything now. And yes, we are already testing silicon from Terafab. Occupy Mars is not a slogan on a shirt. It is the product roadmap. Thank you for watching.
+
+Voice: SAME as Scene 1 — American male, mid-forties, Texas accent, 0.90x speed.
+
+OPTIONAL OVERLAYS (Scene 2 — if Grok/Starlink spoken again):
+
+On "Grok" → popup-grok-xai.png
+On "Starlink" → popup-starlink.png
+
+================================================================================
+CHECKLIST
+================================================================================
+
+[ ] Avatar uploaded (avatar-jim-harlan-male-podcast.png)
+[ ] All 5 popup PNGs uploaded from images/popups/
+[ ] Scene 1: medium-wide torso-up framing (not face zoom)
+[ ] Scene 2: medium chest-up 20° angle (not tight close-up)
+[ ] Same voice both scenes, 0.90x speed
+[ ] Elon photo pop-up at exactly 0:10 in Scene 1
+[ ] SpaceX / Starlink / Neuralink / Grok logos timed per table
+[ ] Zoom In 0.8s transition between scenes
+[ ] Export 16:9 1080p with overlays baked in
+
+================================================================================
